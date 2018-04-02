@@ -1,0 +1,15 @@
+<div style="text-align:center">
+    <h2>Holiday Details</h2><br/>
+    <p>-------------------------</p>
+   <div *ngFor="let x of holidayDetail">
+    <h3> Name: {{ x.name}} </h3>
+    <p>
+      <span> Date: {{x.date}} </span><br/>
+      <span> Observed: {{x.observed}} </span><br/>
+      <span> Public : {{x.public}} </span>
+    </p>
+  </div><br/>
+  <div class="button-row">
+  <button mat-raised-button color="primary" (click) = "goBack()">Home Page</button>
+  </div>
+</div>

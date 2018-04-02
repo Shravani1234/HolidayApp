@@ -1,0 +1,4 @@
+<h2  style="text-align:center">Click on links below to view Holiday detail </h2>
+<mat-nav-list>
+   <a mat-list-item routerLink = "holiday-detail/{{ x }}" *ngFor="let x of holidays;  let i = index"> {{  i +1 }}&emsp;{{ x }} </a>
+</mat-nav-list>
